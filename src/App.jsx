@@ -8,9 +8,7 @@ function App() {
   return (
     <>
      <h1 className='underline'>starter</h1>
-     <p>hello
-      
-     </p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, nam!</p>
 
     </>
   )
