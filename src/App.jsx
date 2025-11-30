@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import './test.scss'
+import{RouterProvider} from 'react-router'
+import {ScrollRestoration} from 'react-router'
+import router from './routes'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1 className='underline'>starter</h1>
-     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, nam!</p>
-
+    <RouterProvider router = {router}>
+      <ScrollRestoration />  
+    </RouterProvider>
     </>
   )
 }
