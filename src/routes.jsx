@@ -5,15 +5,13 @@ import Products from './pages/Products/Page'
 import Tickets from './pages/Tickets/Page'
 import TicketDetails from './pages/Ticket-details/Page'
 import Comments from  './pages/Comments/Page'
+import DashboardLayout from './components/layout/DashboardLayout'
 
 const router = createBrowserRouter([
     {
         path: "/",
         element:(
-            <div>
-                Application Layout
-                <Outlet />
-            </div>
+            <DashboardLayout />
         ),
         children:[
             {
