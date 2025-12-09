@@ -2,6 +2,7 @@ import React from 'react'
 import {Outlet} from 'react-router'
 import Sidebar from '../../features/sidebar/Sidebar'
 import Topbar from '../../features/topbar/Topbar'
+import BackgroundOverlay from '../common/BackgroundOverlay'
 export default function DashboardLayout() {
   return (
     <>
@@ -14,6 +15,8 @@ export default function DashboardLayout() {
         <div className='relative z-10'>
           <Outlet />
         </div>
+
+        <BackgroundOverlay />
       </div>
     </section>
     </main>
