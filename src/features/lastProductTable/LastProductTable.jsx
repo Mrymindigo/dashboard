@@ -14,7 +14,7 @@ import ChangeVisibilityIcon from './component/ChangeVisibilityIcon'
 import EditProductIcon from './component/EditProductIcon'
 
 const LastProductTable = () => {
-  const [lastProducts , setLastProducts] = useState([...products])
+  const [lastProducts, setLastProducts] = useState([...products])
 
   const Buttons = () => {
     return <Link to={"/products"} className='underline hover:text-blue-400 text-blue-500 gap-1 flex items-center justify-center text-sm'>
@@ -27,6 +27,16 @@ const LastProductTable = () => {
     const newProducts = lastProducts.filter((product) => product.id !== id);
     setLastProducts(newProducts);
   };
+
+  const changeProductVisibility = (id) => {
+    const newProducts = lastProducts.map(product => {
+      return product.id === id
+        ? { ...product, isPublished: !product.isPublished }
+        : { ...product }
+    })
+
+    setLastProducts(newProducts)
+  }
 
   return (
     <div>
@@ -62,7 +72,7 @@ const LastProductTable = () => {
               <TableCell>
                 <div className='flex items-center gap-3'>
                   <RemoveProductIcon product={product} handler={removeProduct} />
-                  <ChangeVisibilityIcon product={product} />
+                  <ChangeVisibilityIcon product={product} handler={changeProductVisibility} />
                   <EditProductIcon product={product} />
                 </div>
               </TableCell>
