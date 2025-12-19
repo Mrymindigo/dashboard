@@ -1,9 +1,14 @@
 import React from 'react'
+import SectionsTitle from '../../components/common/SectionsTitle'
 
-export default function Products() {
+const Products = () => {
   return (
     <>
-    <h1>products</h1>
+    <div>
+    <SectionsTitle title='محصولات' buttons = {""} />
+    </div>
     </>
   )
 }
+
+export default Products

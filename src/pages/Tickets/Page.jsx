@@ -1,9 +1,12 @@
 import React from 'react'
+import SectionsTitle from '../../components/common/SectionsTitle'
 
-export default function Tickets() {
+const Tickets = () => {
   return (
    <>
-   <h1>ticket</h1>
+  <SectionsTitle title='تیکت ها' buttons = {""} />
    </>
   )
 }
+
+export default Tickets

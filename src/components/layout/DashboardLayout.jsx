@@ -11,7 +11,6 @@ export default function DashboardLayout() {
     <section className='grow *:px-6'>
       <Topbar />
       <div className="content mt-6 container mx-auto">
-        content
         <div className='relative z-10'>
           <Outlet />
         </div>

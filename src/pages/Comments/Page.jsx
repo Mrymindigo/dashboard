@@ -1,9 +1,12 @@
 import React from 'react'
+import SectionsTitle from '../../components/common/SectionsTitle'
 
-export default function Comments() {
+const Comments = () => {
   return (
     <>
-    <h1>comments</h1>
+     <SectionsTitle title='کامنت ها' buttons = {""} />
     </>
   )
 }
+
+export default Comments

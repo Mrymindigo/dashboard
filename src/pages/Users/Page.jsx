@@ -1,9 +1,12 @@
 import React from 'react'
+import SectionsTitle from '../../components/common/SectionsTitle'
 
-export default function Users() {
+const Users = () => {
   return (
    <>
-   <h1>users</h1>
+    <SectionsTitle title='کاربران' buttons = {""} />
    </>
   )
 }
+
+export default Users

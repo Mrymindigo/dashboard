@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function TicketDetails() {
+const TicketDetails = () => {
   return (
     <div>
-      <h1>ticket detail</h1>
+    
     </div>
   )
 }
+
+export default TicketDetails
